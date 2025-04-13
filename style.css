@@ -1,0 +1,615 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+
+/* Enlaces*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Botones*/
+.boton {
+    background-color: #7A4480;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    padding: 0.8em 3.2em;
+    border-radius: 100px;
+    align-self: center;
+}
+
+.boton:hover {
+    transform: scale(1.05);    
+    box-shadow: 0 0 15px rgba(122, 68, 128, 0.6);  
+}
+
+.boton:active {
+    transform: scale(0.95); 
+    box-shadow: none; 
+}
+
+
+/* Nav Bar */
+
+/* nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size:0.9375rem ;
+    font-weight: 700;
+    margin: 1.25rem;
+}
+
+nav ul li a:hover {
+    transform: scale(1.10); 
+    opacity: 0.6;           
+} */
+
+/* Títulos h1 */
+.mih1 {
+    color: #525252;
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 800;
+}
+
+.mih1 span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 3.125rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+    margin-bottom: 0rem;
+    
+}
+
+
+/* Títulos h2 */
+.mih2 {
+    color: #525252;
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 25vh 0 9vh 0;
+    font-weight: 700;
+}
+
+.mih2 span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+
+}
+
+
+/* Párrafos*/
+miP {
+    color: black;
+}
+
+
+/* Footer*/
+footer {
+    background-color: #ffffff;
+}
+
+footer p {
+    color: #ffc107;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+footer a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+footer a:hover {
+    transform: scale(1.05); 
+    opacity: 0.7;           
+}
+
+#derechosdeautor {
+    color: #999999;
+    font-size: 0.75rem;
+    font-weight: 300;
+    padding: 2% 20% 1%;
+}
+
+
+/* Imagenes */
+
+.imagenPresentacion {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 5vh;
+  display: block;
+    z-index: 1;
+}
+
+.imagenPequena {
+    height: 40vh;
+    width: 25vw;
+    max-width: 400px;
+    max-height: 325px;
+    border-radius: 2rem;
+object-fit: cover;
+}
+
+.imagenMediana {
+    height:70vh ;
+    width: 40vw;
+    max-width: 650px;
+    max-height: 450px;
+    border-radius: 2rem;
+    margin: 2vw;
+    object-fit: cover;
+}
+
+
+.imagenDestinos {
+    height: 40vh;
+    width: 33vw;
+    max-width: 610px;
+    max-height: 380px;
+    min-width: 300px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+
+.imagenGrande {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 550px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+
+
+/* GRADIENTE IMÁGENES  */
+
+.contenedorGradiente {
+    position: relative;
+    margin: 0vw 2vw 0vw 2vw;
+}
+
+
+.gradiente {
+    position: absolute;
+    border-radius: 0rem 0rem 2rem 2rem;
+    bottom: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to top, black, transparent);
+}
+
+.textoGradiente {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+}
+
+.contenedorGradientePresentacion {
+    position: relative;
+}
+
+.gradientePresentacion {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(to top, black, rgba(255, 255, 255, 0.148));
+}
+
+
+
+/* FLEX BOX Y BOX MODEL*/
+
+
+/* nav bar*/
+.logotipoNav {
+    height: 3.125rem; 
+    width: 3.125rem;
+    margin: 1rem 0 1rem 2.2rem;
+}
+
+.logoLetra {
+    height: 2.5rem; 
+    width: 5rem; 
+    margin: 1rem 0;
+}
+
+.logosRedes {
+    height: 1.25rem; 
+    width: 1.25rem;
+}
+
+.logosRedes:hover {
+    transform: scale(1.05); 
+    opacity: 0.7;           
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 2rem;
+    flex-wrap: wrap; 
+    position: absolute;
+    z-index: 10; 
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0px 0px 0px;
+}
+
+.contenedorRedesSociales {
+    display: flex;
+    align-items: center;
+    margin: 0px 35px 0px 0px
+}
+
+.contenedorRedesSociales {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0rem 2rem 0rem 0rem;
+} 
+
+/* footer*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    padding: 2rem 1rem 1rem;
+    margin-top: 8rem;
+    gap: 2rem;
+}
+
+.contenedorSeccionesFooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+
+}
+
+
+.seccionesFooter {
+    display: flex;
+    flex-direction: column;
+    /* margin: 2.5rem 2.5rem 0rem 2.5rem; */
+    /* max-width: 130px; */
+}
+
+.seccionesFooter a {
+    /* margin: 0rem 0rem 0.8rem 0rem; */
+}
+
+.subcategoriasFooter {
+    margin: 0rem 0rem 1.3rem 0rem;
+}
+
+.logotipo {
+    height: auto;
+    max-height:120px;
+    margin: 1rem;
+}
+
+/* INDEX*/
+
+.bienvenidaPatronZ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 6vh 4vw;
+    gap: 2rem;
+}
+
+.bienvenidaPatronZ div {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoPatronZ {
+    padding: ;
+    width: 35rem;
+    min-width: 50px;
+}
+
+/* .miCarrousel {
+    display: flex;
+    align-items: center;
+    overflow: overlay;
+    gap:6%;
+    justify-content: left;
+    margin: 3vw;
+} */
+
+.miCard p {
+    padding: 0rem .9375rem 1.25rem;
+max-width: 400px;
+}
+
+.cajaDeCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SOBRE MI*/
+
+.h2SobreMi{
+    margin: 6vh 4vw 0vh;
+    text-align: center;
+
+    color: #525252;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.h2SobreMi span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+
+}
+
+
+.textoBienvenidaSobreMi{
+    width: 60%;
+    margin: 3rem;
+    align-self: center;
+}
+
+.instantesDeViaje {
+    display: flex;
+    flex-direction: column;
+    margin: 6vh 2vw;
+}
+
+.fotosSobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0rem 0rem 1.5rem;
+    gap: 7vh;
+}
+
+
+/* DESTINOS*/
+
+.seccionesDestino{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    padding: 0vh 25vh; 
+    gap: 9vh 0vh; 
+}
+
+.imagenDestinos1{
+    grid-column: 1; 
+    grid-row: 1;
+}
+
+
+.imagenDestinos2{
+    grid-column: 2; 
+    grid-row: 1;
+}
+
+.imagenDestinos3{
+    grid-column: 1; 
+    grid-row: 2;
+}
+.imagenDestinos4{
+    grid-column: 2; 
+    grid-row: 2;
+}
+
+
+
+/* FOTOGRAFIA*/
+
+#seccionVidaEnFoco {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoBienvenida{
+    width: 60%;
+    padding: 1rem;
+    align-self: center;
+}
+
+.seccionFotografias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 4rem 3rem 0rem;
+    gap: 2rem 1.5rem;
+}
+
+.miCard {
+    width: calc(33.33% - 40px);
+    min-width: 250px;
+    text-align: center;
+} 
+
+#galeriaFotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosFotografia {
+    color: #525252;
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 800;
+    margin: 3rem auto 2rem;
+}
+
+.titulosFotografia span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 3.125rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+    margin-bottom: 0rem;
+    
+}
+
+
+/* BLOG*/
+#contenedorBodyBlog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+
+.contenedorCardsBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem 2rem;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+#seccionBlog {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textoBienvenidaBlog {
+    width: 60%;
+    margin: 2rem auto;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.mih1Blog {
+    color: #525252;
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 800;
+    margin: 5rem auto 2rem; 
+}
+
+.mih1Blog span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 3.125rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+    margin-bottom: 0rem;
+    
+}
+
+
+.mih2Blog {
+    color: #525252;
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 25vh 0 9vh 0;
+    font-weight: 700;
+    margin: 5rem auto 2rem; 
+}
+
+.mih2Blog span p {
+    display: inline-block;
+    color: #ffc107;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: "Shantell Sans";
+
+}
+
+.navdesk{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    
+}
+.navmob{
+    display: none;
+}
+
+@media (max-width:576px) 
+{
+    .contenedorSeccionesFooter {
+        margin: 0;
+        justify-content: space-around;
+        font-size: medium; 
+    }
+    header{
+        justify-content: center;
+    }
+    .navdesk{
+        display: none;
+
+    }
+    .navmob{
+        display: block;
+    }
+} 
+
+
+
+
+
+
+
