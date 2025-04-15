@@ -42,7 +42,7 @@ a {
 
 /* Nav Bar */
 
-/* nav ul li {
+nav ul li {
     list-style-type: none;
 }
 
@@ -56,7 +56,7 @@ nav ul li a {
 nav ul li a:hover {
     transform: scale(1.10); 
     opacity: 0.6;           
-} */
+}
 
 /* Títulos h1 */
 .mih1 {
@@ -64,6 +64,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 2.375rem;
     font-weight: 800;
+    margin-bottom: 2rem;
 }
 
 .mih1 span p {
@@ -265,7 +266,6 @@ header {
 }
 
 
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -308,6 +308,7 @@ footer {
 
 .contenedorSeccionesFooter {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: start;
 
@@ -317,12 +318,12 @@ footer {
 .seccionesFooter {
     display: flex;
     flex-direction: column;
-    /* margin: 2.5rem 2.5rem 0rem 2.5rem; */
-    /* max-width: 130px; */
+    margin: 2.5rem 2.5rem 0rem 2.5rem;
+    max-width: 130px;
 }
 
 .seccionesFooter a {
-    /* margin: 0rem 0rem 0.8rem 0rem; */
+    margin: 0rem 0rem 0.8rem 0rem;
 }
 
 .subcategoriasFooter {
@@ -332,7 +333,7 @@ footer {
 .logotipo {
     height: auto;
     max-height:120px;
-    margin: 1rem;
+    margin: 2rem 0rem;
 }
 
 /* INDEX*/
@@ -352,19 +353,11 @@ footer {
 }
 
 .textoPatronZ {
-    padding: ;
+    padding: 0;
     width: 35rem;
     min-width: 50px;
+    margin-bottom: 1.5rem;
 }
-
-/* .miCarrousel {
-    display: flex;
-    align-items: center;
-    overflow: overlay;
-    gap:6%;
-    justify-content: left;
-    margin: 3vw;
-} */
 
 .miCard p {
     padding: 0rem .9375rem 1.25rem;
@@ -516,12 +509,13 @@ max-width: 400px;
     justify-content: center;
     max-width: 1400px;
     padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .contenedorCardsBlog {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     margin: 0 2rem 2rem;
     max-width: 1200px;
@@ -578,36 +572,9 @@ max-width: 400px;
 
 }
 
-.navdesk{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    
-}
-.navmob{
-    display: none;
-}
-
-@media (max-width:576px) 
-{
-    .contenedorSeccionesFooter {
-        margin: 0;
-        justify-content: space-around;
-        font-size: medium; 
-    }
-    header{
-        justify-content: center;
-    }
-    .navdesk{
-        display: none;
-
-    }
-    .navmob{
-        display: block;
-    }
-} 
 
 
+/* Diseño Resposivo- Media Queries*/
 
 
 
