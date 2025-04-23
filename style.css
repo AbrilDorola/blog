@@ -42,21 +42,48 @@ a {
 
 /* Nav Bar */
 
-nav ul li {
-    list-style-type: none;
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.4); 
+    position: absolute;
+    z-index: 1000;
+    backdrop-filter: blur(1.3px);
 }
 
-nav ul li a {
+.custom-navbar .nav-link {
     color: black;
-    font-size:0.9375rem ;
-    font-weight: 700;
+    font-size:1.1rem ;
+    font-weight: bold;
     margin: 1.25rem;
-}
+  }
 
-nav ul li a:hover {
+  .nav-link:hover {
     transform: scale(1.10); 
     opacity: 0.6;           
 }
+
+.logotipoNav {
+    height: 3.125rem; 
+    width: 3.125rem;
+    margin: 1rem 0 1rem 2.2rem;
+}
+
+.logoLetra {
+    height: 2.5rem; 
+    width: 5rem; 
+    margin: 1rem 0;
+}
+
+.logosRedes {
+    height: 1.25rem; 
+    width: 1.25rem;
+}
+
+.logosRedes:hover {
+    transform: scale(1.05); 
+    opacity: 0.7;           
+}
+
+
 
 /* Títulos h1 */
 .mih1 {
@@ -157,8 +184,9 @@ object-fit: cover;
     width: 40vw;
     max-width: 650px;
     max-height: 450px;
+    min-width: 250px;
+    min-height:225px ;
     border-radius: 2rem;
-    margin: 2vw;
     object-fit: cover;
 }
 
@@ -231,68 +259,8 @@ object-fit: cover;
 /* FLEX BOX Y BOX MODEL*/
 
 
-/* nav bar*/
-.logotipoNav {
-    height: 3.125rem; 
-    width: 3.125rem;
-    margin: 1rem 0 1rem 2.2rem;
-}
-
-.logoLetra {
-    height: 2.5rem; 
-    width: 5rem; 
-    margin: 1rem 0;
-}
-
-.logosRedes {
-    height: 1.25rem; 
-    width: 1.25rem;
-}
-
-.logosRedes:hover {
-    transform: scale(1.05); 
-    opacity: 0.7;           
-}
-
-header {
-    background-color: rgba(255, 255, 255, 0.5); 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0rem 2rem;
-    flex-wrap: wrap; 
-    position: absolute;
-    z-index: 10; 
-}
 
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 15px 0px 0px 0px;
-}
-
-.contenedorRedesSociales {
-    display: flex;
-    align-items: center;
-    margin: 0px 35px 0px 0px
-}
-
-.contenedorRedesSociales {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0rem 2rem 0rem 0rem;
-} 
 
 /* footer*/
 footer {
@@ -343,8 +311,8 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 6vh 4vw;
     gap: 2rem;
+    padding: 2rem
 }
 
 .bienvenidaPatronZ div {
@@ -354,7 +322,7 @@ footer {
 
 .textoPatronZ {
     padding: 0;
-    width: 35rem;
+    max-width: 35rem;
     min-width: 50px;
     margin-bottom: 1.5rem;
 }
@@ -367,7 +335,7 @@ max-width: 400px;
 .cajaDeCards {
     display: flex;
     flex-wrap: wrap;
-    margin: 5vh 2vw;
+    margin: 6vh 0vw;
     justify-content: center;
     align-items: center;
 }
@@ -574,8 +542,106 @@ max-width: 400px;
 
 
 
-/* Diseño Resposivo- Media Queries*/
+/* MEDIA QUERIES*/
 
+@media (max-width:576px) { 
+
+    /* Footer*/
+
+    
+.logotipo {
+    height: 6rem;
+    margin: 0;
+}
+
+.contenedorSeccionesFooter {
+    width: 100%;
+    gap: 0.2rem;
+
+}
+    .seccionesFooter {
+      padding: 10px;
+      margin: 0;
+        max-width: 100px;
+    }
+
+    #derechosdeautor {
+        padding: 0;
+    }
+
+    /* Index*/
+    .imagenMediana{
+        height: auto;
+        width: auto;
+     max-width: 650px;
+            max-height: 450px;
+            min-width: 250px;
+            min-height:225px ;
+            border-radius: 2rem;
+            object-fit: cover;
+    }
+
+    .mih1 {
+    margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .mih1 span p {
+        display: inline-block;
+        color: #ffc107;
+        font-size: 2.2rem; 
+    }
+
+    body{
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+    }
+
+    .boton {
+        font-size: 0.80rem;
+        padding: 0.40rem 1.25rem;
+    }
+
+    .mih2 {
+        font-size: 1.5rem;
+        margin: 60px 0px 40px ;
+        font-weight: 700;
+    }
+    
+    .mih2 span p {
+        font-size: 2.2rem;
+        font-weight: 100;
+      
+    
+    }
+
+    .cajaDeCards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imagenPequena {
+        width: 70vw;
+     
+    }
+    
+    .miCard {
+        width: auto;
+    } 
+
+    .miCard p {
+        padding: 0rem .9375rem 1.25rem;
+    max-width: 400px;
+    }
+
+/* Sobre Mí*/
+
+
+
+
+ }
 
 
 

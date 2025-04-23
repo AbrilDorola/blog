@@ -32,33 +32,43 @@
 
 
 <body>
-    <!-- Esta es la Nav Bar -->
-    <header>
-        <div class="logotiposVarios">
-            <a href="index.html"> <img class="logotipoNav" src="assets/imagenes/logotipos/logoMundo.png"
-                    alt="Logotipo del sitio web: un mundo color amarillo"></a>
-            <a href="index.html"><img class="logoLetra" src="assets/imagenes/logotipos/logoTipografia.png" alt=""
-                    Logotipo del sitio web: un mundo color amarillo"">
-        </div></a>
+         <!-- Nav Bar Bootstrap-->
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre mí</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="fotografia.html">Fotografía</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-
-        <div class="contenedorRedesSociales">
-            <a href="https://Facebook.com"><img class="logosRedes" src="assets/imagenes/logotipos/logoFacebook.png"
-                    alt=""></a>
-            <a href="https://Instagram.com"><img class="logosRedes" src="assets/imagenes/logotipos/logoInstagram.png"
-                    alt=""></a>
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logotipoNav" src="assets/imagenes/logotipos/logoMundo.png" alt="Logo Mundo">
+      </a>
+      <a href="index.html">
+        <img class="logoLetra" src="assets/imagenes/logotipos/logoTipografia.png" alt="Logo Letra">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="sobreMi.html">Sobre mí</a>
+          <a class="nav-link" href="destinos.html">Destinos</a>
+          <a class="nav-link" href="fotografia.html">Fotografía</a>
+          <a class="nav-link" href="blog.html">Blog</a>
         </div>
-    </header>
-
+        <div class="contenedorRedesSociales d-flex align-items-center ms-3">
+          <a href="https://Facebook.com"><img class="logosRedes" src="assets/imagenes/logotipos/logoFacebook.png" alt=""></a>
+          <a href="https://Instagram.com"><img class="logosRedes" src="assets/imagenes/logotipos/logoInstagram.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
     <!-- Imágen de presentación-->
     <div class="contenedorGradientePresentacion">
         <img class="imagenPresentacion" src="assets/imagenes/destinos/portadaDestinos.jpg"
