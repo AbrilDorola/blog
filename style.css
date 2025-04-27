@@ -325,11 +325,11 @@ footer {
 
 .bienvenidaPatronZ {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 3rem;
-    padding: 2rem
+    padding: 3rem 0rem
 }
 
 .bienvenidaPatronZ div {
@@ -337,9 +337,10 @@ footer {
     flex-direction: column;
 }
 
+
 .textoPatronZ {
     padding: 0;
-    max-width: 30rem;
+    max-width: 35rem;
     min-width: 50px;
     margin-bottom: 1.5rem;
 }
@@ -361,14 +362,13 @@ footer {
 /* SOBRE MI*/
 
 .h2SobreMi {
-    margin: 6vh 4vw 0vh;
-    text-align: center;
-
     color: #525252;
     text-align: center;
     font-size: 1.75rem;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
+
 
 .h2SobreMi span p {
     display: inline-block;
@@ -381,8 +381,8 @@ footer {
 
 
 .textoBienvenidaSobreMi {
-    width: 60%;
-    margin: 3rem;
+    max-width: 60rem;
+    margin-bottom: 30px;
     align-self: center;
 }
 
@@ -398,6 +398,7 @@ footer {
     justify-content: center;
     padding: 0rem 0rem 1.5rem;
     gap: 7vh;
+    margin-bottom: 5rem;
 }
 
 
@@ -408,9 +409,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    padding: 0vh 25vh;
-    gap: 9vh 0vh;
+    padding: 0 10vw;
+    gap: 7vh 0;
 }
+
+
 
 .imagenDestinos1 {
     grid-column: 1;
@@ -564,7 +567,7 @@ footer {
 
 @media (max-width:1100px) {
 
-    /* index*/
+    /* index 1100px*/
 
     .bienvenidaPatronZ {
         flex-wrap: nowrap;
@@ -585,12 +588,107 @@ footer {
         font-size: 1.1rem;
     }
 
+
+    /* DESTINOS 1100px*/
+
+    .seccionesDestino {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+        padding: 0 1rem;
+    }
+
+    .contenedorGradiente {
+        width: 40vw;
+        margin: 0.5rem 0;
+    }
+
+    .gradiente {
+        border-radius: 2rem;
+    }
+
+    .imagenDestinos {
+        width: 40vw;
+        height: 40vh;
+        object-fit: cover;
+        display: block;
+        border-radius: 2rem;
+    }
+
+    /* FOTOGRAFÍA 1100px*/
+
+    .textoBienvenida {
+        width: 70%
+    }
+
+    .seccionFotografias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        padding: 5rem 1rem 0rem;
+        gap: 3rem 2rem;
+    }
+
+    .miCard {
+        width: calc(33.33% - 40px);
+        min-width: 0;
+        text-align: center;
+    }
+
+    .miCard p {
+        padding: 0;
+    }
+
+    #enlacePaginaGaleria {
+        margin: 100px 0px 40px;
+    }
+
+
+    /* BLOG 1100px*/
+
+    .miCard {
+        width: calc(33.333% - 2rem);
+        text-align: center;
+    }
+
+    .textoBienvenidaBlog {
+        width: 80%;
+    }
+
+    /* #contenedorBodyBlog {
+        padding: 0;
+    } */
+
+    .mih2Blog {
+        margin: 100px 0px 40px;
+    }
+
 }
+
+
+
+
 
 
 @media (max-width:768px) {
 
-    /* Index*/
+    /* INDEX 768px*/
+
+
+    .sectionGradienteIndex .cajaDeCards .contenedorGradiente {
+        position: relative;
+        margin: 0vw 2vw 0vw 2vw;
+        width: auto;
+    }
+
+    .miCardIndex .cajaDeCards .miCard {
+        width: auto;
+        min-width: 250px;
+        text-align: center;
+    }
+
 
     body {
         font-size: 1.15rem;
@@ -622,6 +720,7 @@ footer {
     .imagenMediana {
         height: auto;
         width: auto;
+        margin: 0px 30px;
     }
 
     .imagenPequena {
@@ -661,13 +760,78 @@ footer {
         padding: 0;
     }
 
+    /* DESTINOS 768px*/
+
+    .seccionesDestino {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 2rem;
+        padding: 0 1rem;
+    }
+
+    .contenedorGradiente {
+        width: 40%;
+        min-width: 250px;
+        margin: 0.5rem 0;
+        position: relative;
+    }
+
+    .gradiente {
+        border-radius: 2rem;
+        position: absolute;
+    }
+
+    .imagenDestinos {
+        min-width: 250px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 2rem;
+    }
+
+
+    /* FOTOGRAFÍA 768px*/
+
+    .seccionFotografias {
+        justify-content: center;
+    }
+
+    .miCard {
+        width: calc(50% - 20px);
+        min-width: 0;
+    }
+
+    #enlacePaginaGaleria {
+        margin: 50px 0px 20px;
+    }
+
+    .seccionFotografias .miCard .imagenPequena {
+        width: 40vw;
+    }
+
+    .textoBienvenida {
+        width: 90%;
+    }
+
+    /* BLOG 768px*/
+
+    .contenedorCardsBlog .miCard .imagenPequena {
+        width: 40vw;
+    }
+
+    .textoBienvenidaBlog {
+        width: 90%;
+    }
 }
+
+
 
 
 
 @media (max-width:576px) {
 
-    /* Footer*/
+    /* fOOTER 576px*/
     .logotipo {
         height: 6rem;
         margin: 0;
@@ -689,7 +853,35 @@ footer {
         padding: 0;
     }
 
-    /* Index*/
+    /* INDEX 576px*/
+
+    .contenedorSectionBienvenida .bienvenidaPatronZ {
+        flex-wrap: wrap;
+        gap: 3rem;
+        display: flex;
+        padding: 2rem;
+    }
+
+    .contenedorSectionBienvenida .textoPatronZ {
+        max-width: 40rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contenedorSectionBienvenida .imagenMediana {
+        height: auto;
+        width: auto;
+        margin: 0px;
+    }
+
+    .sectionGradienteIndex .cajaDeCards .contenedorGradiente .gradiente {
+        position: absolute;
+        border-radius: 0rem 0rem 2rem 2rem;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, black, transparent);
+    }
+
 
     .miContainer {
         margin: 0;
@@ -727,7 +919,6 @@ footer {
         font-size: 2.2rem;
         font-weight: 100;
 
-
     }
 
     .cajaDeCards {
@@ -748,11 +939,84 @@ footer {
         padding: 0rem .9375rem 1.25rem;
     }
 
+    .textoPatronZ {
+        font-size: 1rem;
+    }
 
+    /* SOBRE MI 576px*/
 
-    /* Sobre Mí*/
+    .h2SobreMi {
+        font-size: 1.5rem;
+        margin: 50px 0px 20px;
+    }
 
+    .h2SobreMi span p {
+        font-size: 2.2rem;
+    }
 
+    .bienvenidaPatronZ {
+        gap: 1rem;
+        padding: 0;
+    }
 
+    .instantesDeViaje {
+        margin: 0vh 0vw;
+    }
+
+    .textoPatronZ {
+        margin-bottom: 0;
+    }
+
+    .textoBienvenidaSobreMi {
+        margin-bottom: 2rem;
+    }
+
+    .fotosSobreMi {
+        margin-bottom: 0;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    /* DESTINOS 576px*/
+
+    .seccionesDestino {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    .contenedorGradiente {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .imagenDestinos {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 2rem;
+    }
+
+    /* FOTOGRAFÍA 576px*/
+
+    .seccionFotografias .miCard .imagenPequena {
+        width: 70vw;
+    }
+
+    /* BLOG 576px*/
+
+    .mih1Blog {
+        margin: 2rem 0 0;
+    }
+
+    .mih2Blog {
+        margin: 2.3rem 0 2rem;
+    }
+
+    .contenedorCardsBlog .miCard .imagenPequena {
+        width: 80vw;
+    }
 
 }
