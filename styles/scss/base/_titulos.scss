@@ -1,0 +1,33 @@
+/* Títulos h1 */
+
+.mih1 {
+    @include tituloh1($font-size-h1, $font-weight-800, $color-gris-titulos, center, 2rem);
+  
+    span p {
+      display: inline-block;
+      color: $color-amarillo-primario;
+      font-size: 3.125rem;
+      font-weight: $font-weight-100;
+      font-family: $font-family-secundaria;
+      margin-bottom: 0;
+    }
+  }
+
+
+
+/* Títulos h2 */
+
+.mih2 {
+   @include tituloh2($font-size-h2, $font-weight-700,$color-gris-titulos,center)
+   margin: 25vh 0 9vh 0;
+
+    span p {
+        display: inline-block;
+        color:$color-amarillo-primario;
+        font-size: 2.5rem;
+        font-weight: $font-weight-100;
+        font-family: $font-family-secundaria;
+    
+    }
+    
+}

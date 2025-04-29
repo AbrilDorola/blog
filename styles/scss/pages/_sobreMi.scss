@@ -1,0 +1,22 @@
+/* SOBRE MI*/
+
+.textoBienvenidaSobreMi {
+    max-width: 60rem;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.instantesDeViaje {
+    display: flex;
+    flex-direction: column;
+    margin: 6vh 2vw;
+}
+
+.fotosSobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0rem 0rem 1.5rem;
+    gap: 7vh;
+    margin-bottom: 5rem;
+}

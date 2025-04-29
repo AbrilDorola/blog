@@ -1,0 +1,64 @@
+/* Footer*/
+footer {
+    background-color: $color-blanco;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 1px solid $color-gris-borderTop;
+    padding: 2rem 1rem 1rem;
+    margin-top: 8rem;
+    gap: 2rem;
+
+    p {
+        color: $color-amarillo-primario;
+        font-size: 0.9375rem;
+        font-weight: $font-weight-700;
+    }
+
+    a {
+        font-size: 0.9375rem;
+        font-weight: 500;
+
+        &:hover {
+            transform: scale(1.05);
+            opacity: 0.7;
+        }
+    }
+}
+
+#derechosdeautor {
+    color: $color-gris-derechosAutor;
+    font-size: 0.75rem;
+    font-weight: $font-weight-300;
+    padding: 2% 20% 1%;
+}
+
+.contenedorSeccionesFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+
+}
+
+.seccionesFooter {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 2.5rem 0rem 2.5rem;
+    max-width: 130px;
+
+    a {
+        margin: 0rem 0rem 0.8rem 0rem;
+    }
+}
+
+.subcategoriasFooter {
+    margin: 0rem 0rem 1.3rem 0rem;
+}
+
+.logotipo {
+    height: auto;
+    max-height: 120px;
+    margin: 2rem 0rem;
+}
