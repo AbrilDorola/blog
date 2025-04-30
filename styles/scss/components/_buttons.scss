@@ -1,22 +1,19 @@
 /* Botones*/
 .boton {
-    background-color: #7A4480;
-    color: #ffffff;
-    font-size: 0.9375rem;
+    background-color: $color-violeta-secundario;
+    color: $color-blanco;
+    font-size:0.9375rem;
     padding: 0.8em 3.2em;
     border-radius: 100px;
     align-self: center;
 
-    &:hover{
+    &:hover {
         transform: scale(1.05);
         box-shadow: 0 0 15px rgba(122, 68, 128, 0.6);
     }
 
-    &:active{
+    &:active {
         transform: scale(0.95);
         box-shadow: none;
     }
 }
-
-
-

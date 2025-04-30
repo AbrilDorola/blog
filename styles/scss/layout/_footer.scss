@@ -1,10 +1,7 @@
 /* Footer*/
 footer {
+    @include flexbox(row,space-evenly,flex-start,wrap)
     background-color: $color-blanco;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
     border-top: 1px solid $color-gris-borderTop;
     padding: 2rem 1rem 1rem;
     margin-top: 8rem;
@@ -35,11 +32,7 @@ footer {
 }
 
 .contenedorSeccionesFooter {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: start;
-
+    @include flexbox(row,center,start,wrap)
 }
 
 .seccionesFooter {

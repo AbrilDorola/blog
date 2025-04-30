@@ -1,12 +1,10 @@
 /* INDEX*/
 
 .miContainerCarousel {
-    display: flex;
-    justify-content: center;
-    margin: 0vh 6vw;
+    @mixin flexCentrado margin: 0vh 6vw;
 }
 
-.miCard{
+.miCard {
     p {
         padding: 0rem .9375rem 1.25rem;
         max-width: 400px;
@@ -14,10 +12,5 @@
 }
 
 .cajaDeCards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 6vh 0vw;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(wrap) margin: 6vh 0vw;
 }
-

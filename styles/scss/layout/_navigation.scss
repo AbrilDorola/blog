@@ -7,19 +7,14 @@
     backdrop-filter: blur(1.3px);
 
     .nav-link {
-        color: black;
+        color: $color-negro-secundario;
         font-size: 1.1rem;
         font-weight: bold;
         margin: 1.25rem;
 
-        &:hover{
+        &:hover {
             transform: scale(1.10);
             opacity: 0.6;
         }
     }
 }
-
-
-
-
-
