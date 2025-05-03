@@ -1,0 +1,227 @@
+@media (max-width:576px) {
+
+    /* FOOTER 576px*/
+    .logotipo {
+        height: 6rem;
+        margin: 0;
+    }
+
+    .contenedorSeccionesFooter {
+        width: 100%;
+        gap: 0.2rem;
+
+    }
+
+    .seccionesFooter {
+        padding: 10px;
+        margin: 0;
+        max-width: 100px;
+    }
+
+    #derechosdeautor {
+        padding: 0;
+    }
+
+
+    /* INDEX 576px*/
+
+    .contenedorSectionBienvenida {
+        .bienvenidaPatronZ {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            padding: 1rem;
+        }
+
+        .textoPatronZ {
+            max-width: 40rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .imagenMediana {
+            height: auto;
+            width: auto;
+            margin: 0px;
+        }
+    }
+
+
+    .sectionGradienteIndex {
+        .cajaDeCards {
+            .contenedorGradiente {
+                .gradiente {
+                    position: absolute;
+                    border-radius: 0rem 0rem 2rem 2rem;
+                    bottom: 0;
+                    width: 100%;
+                    height: 50%;
+                    background: linear-gradient(to top, black, transparent);
+                }
+            }
+        }
+    }
+
+
+    .miContainer {
+        margin: 0;
+    }
+
+    .mih1 {
+        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+
+        span p {
+            display: inline-block;
+            color: #ffc107;
+            font-size: 2.2rem;
+        }
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+    }
+
+    .boton {
+        font-size: 0.80rem;
+        padding: 0.40rem 1.25rem;
+    }
+
+    .mih2 {
+        font-size: 1.5rem;
+        margin: 60px 1rem 40px;
+        font-weight: 700;
+        padding: 0rem 1rem;
+
+        span p {
+            font-size: 2.2rem;
+            font-weight: 100;
+
+        }
+    }
+
+    .cajaDeCards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imagenPequena {
+        width: 70vw;
+    }
+
+    .miCard {
+        width: auto;
+
+        p {
+            padding: 0rem .9375rem 1.25rem;
+        }
+    }
+
+    .textoPatronZ {
+        font-size: 1rem;
+    }
+
+
+    /* SOBRE MI 576px*/
+
+    .h2SobreMi {
+        font-size: 1.5rem;
+        margin: 50px 1rem 20px;
+
+        span p {
+            font-size: 2.2rem;
+        }
+
+    }
+
+    .bienvenidaPatronZ {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .instantesDeViaje {
+        margin: 0vh 0vw;
+    }
+
+    .textoPatronZ {
+        margin: 0rem 1rem;
+    }
+
+    .textoBienvenidaSobreMi {
+        margin: 0rem 1rem 2rem;
+    }
+
+    .fotosSobreMi {
+        margin-bottom: 0;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+
+    /* DESTINOS 576px*/
+
+    .seccionesDestino {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .contenedorGradiente {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .imagenDestinos {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 2rem;
+    }
+
+
+    /* FOTOGRAFÍA 576px*/
+
+    .textoBienvenida {
+        width: 90vw;
+        padding: 0;
+    }
+
+
+    .seccionFotografias {
+        .miCard {
+            .imagenPequena {
+                width: 70vw;
+            }
+        }
+    }
+
+
+    /* BLOG 576px*/
+
+    .mih1Blog {
+        margin: 2rem 1rem;
+    }
+
+    .mih2Blog {
+        margin: 2.3rem 0 2rem;
+    }
+
+    .textoBienvenidaBlog {
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .contenedorCardsBlog {
+        .miCard {
+            .imagenPequena {
+                width: 80vw;
+            }
+        }
+    }
+
+
+}

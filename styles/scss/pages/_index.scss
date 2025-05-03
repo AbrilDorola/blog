@@ -1,7 +1,8 @@
 /* INDEX*/
 
 .miContainerCarousel {
-    @mixin flexCentrado margin: 0vh 6vw;
+    @include flexCentrado; 
+    margin: 0vh 6vw;
 }
 
 .miCard {
@@ -12,5 +13,6 @@
 }
 
 .cajaDeCards {
-    @include flexbox(wrap) margin: 6vh 0vw;
+    @include flexbox(wrap);
+     margin: 6vh 0vw;
 }

@@ -7,11 +7,13 @@
 }
 
 .instantesDeViaje {
-    @include flexCentrado margin: 6vh 2vw;
+    @include flexCentrado;
+     margin: 6vh 2vw;
 }
 
 .fotosSobreMi {
-    @include flexbox(wrap) padding: 0rem 0rem 1.5rem;
+    @include flexbox(wrap);
+     padding: 0rem 0rem 1.5rem;
     gap: 7vh;
     margin-bottom: 5rem;
 }

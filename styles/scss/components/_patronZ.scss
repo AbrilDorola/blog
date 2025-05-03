@@ -1,10 +1,12 @@
 .bienvenidaPatronZ {
-    @include patronZ(row-reverse, wrap, space-evenly, center, 3rem 0) div {
-        display: flex;
-        flex-direction: column;
+    @include patronZ(row-reverse, wrap, space-evenly, center, 3rem 0);
+  
+    div {
+      display: flex;
+      flex-direction: column;
     }
-}
-
+  }
+  
 
 .textoPatronZ {
     padding: 0;

@@ -1,12 +1,14 @@
 /* BLOG*/
 #contenedorBodyBlog {
-    @include flexbox(wrap) max-width: 1400px;
+    @include flexbox(wrap);
+    max-width: 1400px;
     padding: 0 2rem;
     margin: 0 auto;
 }
 
 .contenedorCardsBlog {
-    @include flexbox(space-between, wrap) margin: 0 2rem 2rem;
+    @include flexbox(space-between, wrap);
+    margin: 0 2rem 2rem;
     max-width: 1200px;
     gap: 2rem;
 }
@@ -24,15 +26,18 @@
 }
 
 .mih1Blog {
-    @include titulos margin: 5rem auto 2rem;
+    @include titulos ($font-size-h1, $font-weight-800, $color-gris-titulos, center);
+    margin: 5rem auto 2rem;
 
     span p {
         @include spanTitulos
     }
 }
 
+
 .mih2Blog {
-    @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center) margin: 5rem auto 2rem;
+    @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center);
+    margin: 5rem auto 2rem;
 
     span p {
         @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria)
