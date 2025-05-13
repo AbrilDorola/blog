@@ -1,55 +1,39 @@
+//UTILIDADES
+@import "./utils/helpers";
+@import "./utils/mixins";
+@import "./utils/variables";
+
 // BASE
-@import "/styles/scss/base/reset";
-@import "/styles/scss/base/titulos";
-@import "/styles/scss/base/typography";
+@import "./base/reset";
+@import "base/titulos";
+@import "./base/typography";
 
 //COMPONENTES
-@import "/styles/scss/components/buttons";
-@import "/styles/scss/components/carousel";
-@import "/styles/scss/components/miCard";
-@import "/styles/scss/components/patronZ";
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/miCard";
+@import "./components/patronZ";
 
 //IMAGENES
-@import "/styles/scss/imagenes/gradienteImagenes";
-@import "/styles/scss/imagenes/imagenes";
+@import "./imagenes/gradienteImagenes";
+@import "./imagenes/imagenes";
 
 //LAYOUT
-@import "/styles/scss/layout/footer";
-@import "/styles/scss/layout/header";
-@import "/styles/scss/layout/navigation";
-
-//MEDIA QUERIES
-@import "/styles/scss/mediaQueries/_maxWidth576px";
-@import "/styles/scss/mediaQueries/_maxWidth768px";
-@import "/styles/scss/mediaQueries/_maxWidth1100px";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
 
 //PAGINAS
-@import "/styles/scss/pages/blog";
-@import "/styles/scss/pages/destinos";
-@import "/styles/scss/pages/fotografia";
-@import "/styles/scss/pages/index";
-@import "/styles/scss/pages/sobreMi";
-
-//UTILIDADES
-@import "/styles/scss/utils/helpers";
-@import "/styles/scss/utils/mixins";
-@import "/styles/scss/utils/variables";
+@import "./pages/blog";
+@import "./pages/destinos";
+@import "./pages/fotografia";
+@import "./pages/index";
+@import "./pages/sobreMi";
 
 //VENDORS
-@import "/styles/scss/vendors/bootstraps";
+@import "./vendors/bootstraps";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//MEDIA QUERIES
+@import "mediaQueries/maxWidth1100px";
+@import "./mediaQueries/_maxWidth768px";
+@import "./mediaQueries/_maxWidth576px";

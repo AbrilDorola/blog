@@ -1,14 +1,14 @@
 /* Imagenes */
 
 .imagenPresentacion {
-    @include imagenes(100vh, 100%, $object-fit, 0);
+    @include imagenes(100vh, 100%, $object-fit, 0, null, null, null, null,);
     margin-bottom: 100px;
     display: block;
     z-index: 1;
 }
 
 .imagenPequena {
-    @include imagenes(40vh, 25vw, $object-fit, $border-radius, 500px, 325px)
+    @include imagenes(40vh, 100%, $object-fit, $border-radius, 500px, 325px, null, null,)
 }
 
 .imagenMediana {
@@ -16,5 +16,5 @@
 }
 
 .imagenGrande {
-    @include imagenes(auto, 100%, $object-fit, $border-radius, 1500px, 550px)
+    @include imagenes(auto, 100%, $object-fit, $border-radius, 1500px, 550px, null, null,)
 }

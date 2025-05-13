@@ -8,12 +8,35 @@
 
 .instantesDeViaje {
     @include flexCentrado;
-     margin: 6vh 2vw;
+    flex-direction: column;
+    margin: 6vh 80px;
 }
 
 .fotosSobreMi {
-    @include flexbox(wrap);
-     padding: 0rem 0rem 1.5rem;
+    @include flexbox(row, center, center, nowrap);
     gap: 7vh;
-    margin-bottom: 5rem;
+
+    .imagenPequena {
+        width: 25%;
+    }
+}
+
+.h2SobreMi {
+    @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center);
+    margin: 15vh 0 9vh 0;
+
+    span p {
+        @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria, 0)
+    }
+}
+
+.bienvenidaPatronZ {
+    .h2SobreMi {
+        @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center);
+        margin: 0px 0px 30px;
+
+        span p {
+            @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria, 0)
+        }
+    }
 }

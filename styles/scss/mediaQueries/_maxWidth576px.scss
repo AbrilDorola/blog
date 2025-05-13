@@ -49,6 +49,13 @@
     .sectionGradienteIndex {
         .cajaDeCards {
             .contenedorGradiente {
+                width: 100%;
+                position: relative;
+                margin: 0;
+                max-width: 80vh;
+                height: 40vh;
+                width: 80vw;
+
                 .gradiente {
                     position: absolute;
                     border-radius: 0rem 0rem 2rem 2rem;
@@ -105,10 +112,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-    }
-
-    .imagenPequena {
-        width: 70vw;
+        margin: 0 1rem;
     }
 
     .miCard {
@@ -121,17 +125,28 @@
 
     .textoPatronZ {
         font-size: 1rem;
+        margin: 0 1rem 2.5rem;
     }
 
 
     /* SOBRE MI 576px*/
+
+    .bienvenidaPatronZ {
+        .h2SobreMi {
+            font-size: 1.5rem;
+
+            span p {
+                font-size: 2rem;
+            }
+        }
+    }
 
     .h2SobreMi {
         font-size: 1.5rem;
         margin: 50px 1rem 20px;
 
         span p {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
     }
@@ -143,10 +158,6 @@
 
     .instantesDeViaje {
         margin: 0vh 0vw;
-    }
-
-    .textoPatronZ {
-        margin: 0rem 1rem;
     }
 
     .textoBienvenidaSobreMi {
@@ -168,11 +179,11 @@
         justify-content: space-between;
         gap: 2rem;
         padding: 0 1rem;
-    }
 
-    .contenedorGradiente {
-        width: 100%;
-        margin: 0.5rem 0;
+        .contenedorGradiente {
+            @include contenedorGradiente(relative, 100%, 610px, 250px, 40vh, 380px, hidden, 2rem);
+            margin: 0.5rem 0;
+        }
     }
 
     .imagenDestinos {
@@ -185,30 +196,71 @@
 
     /* FOTOGRAFÍA 576px*/
 
+    .titulosFotografia {
+        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+
+        span p {
+            display: inline-block;
+            color: #ffc107;
+            font-size: 2.2rem;
+        }
+    }
+
+
+    #enlacePaginaGaleria {
+        font-size: 1.5rem;
+        margin: 50px 1rem 20px;
+
+        span p {
+            font-size: 2rem;
+        }
+
+    }
+
     .textoBienvenida {
         width: 90vw;
         padding: 0;
     }
 
-
     .seccionFotografias {
         .miCard {
             .imagenPequena {
-                width: 70vw;
+                // width: 80vw;
+                height: 40vh;
+                width: 100%;
             }
         }
     }
-
 
     /* BLOG 576px*/
 
     .mih1Blog {
         margin: 2rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+
+        span p {
+            display: inline-block;
+            color: #ffc107;
+            font-size: 2.2rem;
+        }
     }
 
     .mih2Blog {
+        font-size: 1.5rem;
         margin: 2.3rem 0 2rem;
+        font-weight: 700;
+        padding: 0rem 1rem;
+
+        span p {
+            font-size: 2rem;
+            font-weight: 100;
+
+        }
     }
+
 
     .textoBienvenidaBlog {
         margin: 0;

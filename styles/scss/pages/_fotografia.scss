@@ -13,9 +13,18 @@
 .seccionFotografias {
     @include flexbox(row, center, stretch, wrap);
     padding: 4rem 3rem 0rem;
-    gap: 2rem, 1.5rem;
+    gap: 3rem 3rem;
+
 }
 
+.seccionFotografias {
+    .miCard {
+        .imagenPequena {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
 
 #galeriaFotos {
     @include flexCentrado
@@ -23,7 +32,7 @@
 
 .titulosFotografia {
     @include titulos($font-size-h1, $font-weight-800, $color-gris-titulos, center);
-     margin: 3rem auto 2rem;
+    margin: 3rem auto 2rem;
 
     span p {
         @include spanTitulos($display-inline-block, $color-amarillo-primario, 3.125rem, $font-weight-100, $font-family-secundaria, 0)

@@ -1,5 +1,6 @@
 @media (max-width:1100px) {
 
+
     /* index 1100px*/
 
     .bienvenidaPatronZ {
@@ -28,8 +29,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem 2rem;
+        gap: 1rem 1rem;
         padding: 0 1rem;
+
+        .contenedorGradiente {
+            @include contenedorGradiente(relative, 40vw, 610px, 250px, 40vh, 380px, hidden, 2rem)
+        }
     }
 
     .contenedorGradiente {
@@ -37,7 +42,7 @@
     }
 
     .gradiente {
-        border-radius: 2rem;
+        border-radius: 0 0 2rem;
     }
 
     .imagenDestinos {
@@ -48,8 +53,8 @@
         border-radius: 2rem;
     }
 
-    /* FOTOGRAFÍA 1100px*/
 
+    /* FOTOGRAFÍA 1100px*/
     .textoBienvenida {
         width: 70%
     }
@@ -88,10 +93,6 @@
     .textoBienvenidaBlog {
         width: 80%;
     }
-
-    /* #contenedorBodyBlog {
-        padding: 0;
-    } */
 
     .mih2Blog {
         margin: 100px 0px 40px;

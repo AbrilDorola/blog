@@ -1,4 +1,3 @@
-
 @mixin imagenes($height, $width, $object-fit, $border-radius, $max-width, $max-height, $min-width, $min-height) {
   height: $height;
   width: $width;
@@ -47,4 +46,15 @@
   display: flex;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin contenedorGradiente($position, $width, $max-width, $min-width, $height, $max-height, $overflow, $border-radius) {
+  position: $position;
+  width: $width;
+  max-width: $max-width;
+  min-width: $min-width;
+  height: $height;
+  max-height: $max-height;
+  overflow: $overflow;
+  border-radius: $border-radius;
 }

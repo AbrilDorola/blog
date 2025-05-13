@@ -9,15 +9,14 @@
   }
 }
 
-
-
 /* Títulos h2 */
 
 .mih2 {
-  @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center); margin: 25vh 0 9vh 0;
+  @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center);
+  margin: 20vh 0 9vh 0;
 
   span p {
-    @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria)
+    @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria, 0)
   }
 
 }

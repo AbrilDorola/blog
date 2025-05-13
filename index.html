@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instantes de viaje-Inicio</title>
 
-    <!-- Bootstrap CDN -->
+    <!-- BOOTSTRAP CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,10 +13,10 @@
       crossorigin="anonymous"
     />
 
-    <!-- css indexeado -->
-    <link rel="stylesheet" href="styles/css/style.css" />
+    <!-- CSS INDEXADO -->
+    <link rel="stylesheet" href="styles/css/styles.css" />
 
-    <!-- fuentes tipograficas-->
+    <!-- FUENTES TIPOGRAFICAS-->
     <!-- Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,63 +34,64 @@
   </head>
 
   <body>
-    <!-- Nav Bar Bootstrap-->
+    <!-- NAV BAR BOOTSTRAP-->
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logotipoNav"
+              src="assets/imagenes/logotipos/logoMundo.png"
+              alt="Logo Mundo"
+            />
+          </a>
+          <a href="index.html">
+            <img
+              class="logoLetra"
+              src="assets/imagenes/logotipos/logoTipografia.png"
+              alt="Logo Letra"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            class="logotipoNav"
-            src="assets/imagenes/logotipos/logoMundo.png"
-            alt="Logo Mundo"
-          />
-        </a>
-        <a href="index.html">
-          <img
-            class="logoLetra"
-            src="assets/imagenes/logotipos/logoTipografia.png"
-            alt="Logo Letra"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="index.html">Inicio</a>
-            <a class="nav-link" href="sobreMi.html">Sobre mí</a>
-            <a class="nav-link" href="destinos.html">Destinos</a>
-            <a class="nav-link" href="fotografia.html">Fotografía</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-          </div>
-          <div class="contenedorRedesSociales d-flex align-items-center ms-3">
-            <a href="https://Facebook.com"
-              ><img
-                class="logosRedes"
-                src="assets/imagenes/logotipos/logoFacebook.png"
-                alt=""
-            /></a>
-            <a href="https://Instagram.com"
-              ><img
-                class="logosRedes"
-                src="assets/imagenes/logotipos/logoInstagram.png"
-                alt=""
-            /></a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="sobreMi.html">Sobre mí</a>
+              <a class="nav-link" href="destinos.html">Destinos</a>
+              <a class="nav-link" href="fotografia.html">Fotografía</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+            </div>
+            <div class="contenedorRedesSociales d-flex align-items-center ms-3">
+              <a href="https://Facebook.com"
+                ><img
+                  class="logosRedes"
+                  src="assets/imagenes/logotipos/logoFacebook.png"
+                  alt="Logo de Facebook"
+              /></a>
+              <a href="https://Instagram.com"
+                ><img
+                  class="logosRedes"
+                  src="assets/imagenes/logotipos/logoInstagram.png"
+                  alt="Logo de Instagram"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Imagen presentación -->
+    <!-- IMAGEN PRESENTACIÓN -->
     <div class="contenedorGradientePresentacion">
       <img
         class="imagenPresentacion"
@@ -100,7 +101,7 @@
       <div class="gradientePresentacion"></div>
     </div>
 
-    <!-- Sección de presentación-inicio -->
+    <!-- SECCIÓN PRESENTACIÓN INICIO -->
     <div class="contenedorSectionBienvenida">
       <div id="bienvenidaPatronZ" class="bienvenidaPatronZ">
         <img
@@ -129,7 +130,7 @@
       </div>
     </div>
 
-    <!-- Sección de Favoritos del Mundo-Inicio -->
+    <!-- SECCION FAVORITOS DEL MUNDO INICIO -->
     <section class="sectionGradienteIndex">
       <h2 id="enlaceFavoritosMundo" class="mih2">
         Nuestros<span> <p>favoritos</p> </span>del mundo
@@ -168,7 +169,7 @@
       </div>
     </section>
 
-    <!-- Sección Aventura a través del lente-Inicio -->
+    <!-- SECCIÓN AVENTURA A TRAVÉS DEL LENTE INICIO -->
     <section>
       <h2 id="enlaceDetrasLente" class="mih2">
         La
@@ -229,7 +230,7 @@
             src="assets/imagenes/home/paisajesImpresionantes.jpg"
             alt="Montañas verdes en forma de C, frente a un mar azul oscuro."
           />
-          <p>consejos para capturar paisajes impresionantes</p>
+          <p>Consejos para capturar paisajes impresionantes</p>
         </div>
 
         <div class="miCard">
@@ -256,7 +257,7 @@
       </div>
     </section>
 
-    <!-- Sección del Blog-Inico -->
+    <!-- SECCIÓN BLOG INICIO -->
     <section class="miCardIndex">
       <h2 class="mih2">
         El Blog: nuestros
@@ -295,7 +296,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
       <img
         class="logotipo"
@@ -329,7 +330,7 @@
       <p id="derechosdeautor">Abril Dorola.Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Java Bootstrap CDN-->
+    <!-- JAVA BOOTSTRAP CDN-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

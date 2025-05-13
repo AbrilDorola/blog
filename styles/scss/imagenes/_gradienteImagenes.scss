@@ -1,40 +1,55 @@
 /* GRADIENTE IMÁGENES  */
-
-.contenedorGradiente {
-    position: relative;
-    margin: 0vw 2vw 0vw 2vw;
-}
-
-
 .gradiente {
-    position: absolute;
-    border-radius: 0rem 0rem 2rem 2rem;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    background: $background-gradiente;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .textoGradiente {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: $color-blanco;
-    font-size: 18px;
-    font-weight: $font-weight-800;
-    text-align: left;
-    width: 80%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
 }
 
-.contenedorGradientePresentacion {
-    position: relative;
+
+//PARA IMAGENES DE INDEX
+.sectionGradienteIndex {
+  .contenedorGradiente {
+    @include contenedorGradiente(relative, 25vw, 500px, null, 40vh, 325px, hidden, 2rem)
+  }
 }
 
-.gradientePresentacion {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: $background-gradiente;
+.imagenPequena {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.contenedorGradiente:hover .imagenPequena {
+  transform: scale(1.1);
+}
+
+
+//PARA IMAGENES DESTINOS
+.seccionesDestino {
+  .contenedorGradiente {
+    @include contenedorGradiente(relative, 33vw, 610px, 250px, 40vh, 380px, hidden, 2rem)
+  }
+}
+
+.contenedorGradiente:hover .imagenDestinos {
+  transform: scale(1.05);
 }
