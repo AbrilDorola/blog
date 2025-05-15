@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instantes de viaje-Inicio</title>
+    <title>Instantes de Viaje | Destinos | Explora destinos increíbles alrededor del Mundo</title>
 
-    <!-- Bootstrap CDN -->
+    <!-- META DESCRIPTIONS -->
+    <meta
+      name="description"
+      content="Descubrí los destinos más fascinantes de cada continente con fotografías impactantes y datos inspiradores. Viajá por Europa, Asia, África, América y Oceanía sin salir de casa."
+    />
+    <meta
+      name="keywords"
+      content="viajes, destinos, turismo, Europa, Asia, África, América, Oceanía, Inglaterra, París, Grecia, Italia, Japón, Tailandia, India, China, Egipto, Sudáfrica, Kenia, Marruecos, Argentina, Brasil, México, Estados Unidos, Australia, Nueva Zelanda, Melbourne, blog de viajes, fotografía de viajes, experiencias viajeras"
+    />
+
+    <!-- BOOTSTRAP CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,10 +23,10 @@
       crossorigin="anonymous"
     />
 
-    <!-- css indexeado -->
+    <!-- CSS INDEXADO -->
     <link rel="stylesheet" href="styles/css/styles.css" />
 
-    <!-- fuentes tipograficas-->
+    <!-- FUENTES TIPOGRAFICAS-->
     <!-- Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,284 +44,311 @@
   </head>
 
   <body>
-    <!-- Nav Bar Bootstrap-->
+    <!-- NAV BAR BOOTSRAP-->
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logotipoNav"
+              src="assets/imagenes/logotipos/logoMundo.png"
+              alt="Logo Mundo"
+            />
+          </a>
+          <a href="index.html">
+            <img
+              class="logoLetra"
+              src="assets/imagenes/logotipos/logoTipografia.png"
+              alt="Logo Letra"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            class="logotipoNav"
-            src="assets/imagenes/logotipos/logoMundo.png"
-            alt="Logo Mundo"
-          />
-        </a>
-        <a href="index.html">
-          <img
-            class="logoLetra"
-            src="assets/imagenes/logotipos/logoTipografia.png"
-            alt="Logo Letra"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="index.html">Inicio</a>
-            <a class="nav-link" href="sobreMi.html">Sobre mí</a>
-            <a class="nav-link" href="destinos.html">Destinos</a>
-            <a class="nav-link" href="fotografia.html">Fotografía</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-          </div>
-          <div class="contenedorRedesSociales d-flex align-items-center ms-3">
-            <a href="https://Facebook.com"
-              ><img
-                class="logosRedes"
-                src="assets/imagenes/logotipos/logoFacebook.png"
-                alt=""
-            /></a>
-            <a href="https://Instagram.com"
-              ><img
-                class="logosRedes"
-                src="assets/imagenes/logotipos/logoInstagram.png"
-                alt=""
-            /></a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="sobreMi.html">Sobre mí</a>
+              <a class="nav-link" href="destinos.html">Destinos</a>
+              <a class="nav-link" href="fotografia.html">Fotografía</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+            </div>
+            <div class="contenedorRedesSociales d-flex align-items-center ms-3">
+              <a
+                href="https://Facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="logosRedes"
+                  src="assets/imagenes/logotipos/logoFacebook.png"
+                  alt="Logo de Facebook"
+                />
+              </a>
+              <a
+                href="https://Instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="logosRedes"
+                  src="assets/imagenes/logotipos/logoInstagram.png"
+                  alt="Logo de Instagram"
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Imágen de presentación-->
-    <div class="contenedorGradientePresentacion">
-      <img
-        class="imagenPresentacion"
-        src="assets/imagenes/destinos/portadaDestinos.jpg"
-        alt="Mujer leyendo un gran mapa."
-      />
-      <div class="gradientePresentacion"></div>
-    </div>
+    <main>
+      <!-- IMÁGEN DE PRESENTACIÓN-->
+      <div class="contenedorGradientePresentacion">
+        <img
+          class="imagenPresentacion"
+          src="assets/imagenes/destinos/portadaDestinos.jpg"
+          alt="Mujer leyendo un gran mapa."
+        />
+        <div class="gradientePresentacion"></div>
+      </div>
 
-    <!-- Europa -->
-    <div class="tituloPais" id="enlacePaginaEuropa">
-      <h2 id="h2Destinos" class="mih2">Europa</h2>
-    </div>
+      <!-- EUROPA -->
+      <div class="tituloPais" id="enlacePaginaEuropa">
+        <h2 class="mih2">Europa</h2>
+      </div>
 
-    <section class="seccionesDestino">
-      <div class="contenedorGradiente imagenDestinos1">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/inglaterra.jpg"
-          alt="arquitectura de Inglaterra"
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Inglaterra</div>
-      </div>
-      <div class="contenedorGradiente imagenDestinos2">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/paris.jpg"
-          alt="Torre Eiffel con un atardecer de fondo. "
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">París</div>
-      </div>
-      <div class="contenedorGradiente imagenDestinos3">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/grecia.jpg"
-          alt="Vieja estructura griega en ruinas."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Grecia</div>
-      </div>
-      <div class="contenedorGradiente imagenDestinos4">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/italia.jpg"
-          alt="Infraestructura italiana, montón de casas juntas pintadas de distintos colores."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Italia</div>
-      </div>
-    </section>
+      <section class="seccionesDestino">
+        <article class="contenedorGradiente imagenDestinos1">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/inglaterra.jpg"
+            alt="arquitectura de Inglaterra"
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Inglaterra</div>
+        </article>
 
-    <!-- Asia -->
-    <div class="tituloPais" id="enlacePaginaAsia">
-      <h2 class="mih2 h2Destinos">Asia</h2>
-    </div>
+        <article class="contenedorGradiente imagenDestinos2">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/paris.jpg"
+            alt="Torre Eiffel con un atardecer de fondo. "
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">París</div>
+        </article>
 
-    <section class="seccionesDestino">
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/japon.jpg"
-          alt="Infraestructura japonesa de color roja, techo en caída con detalles en sus puntas.De fondo y a lo lejos un pueblo y una montaña nevada."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Japón</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/tailandia.jpg"
-          alt="Gran isla rocosa con mucho verde sobre un mar azul intenso."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Tailandia</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/india.jpg"
-          alt="Gran y lujoso edificio indio de colores beige."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">India</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/china.jpg"
-          alt="Atardecer con una estructura china bajo un lago oscuro."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">China</div>
-      </div>
-    </section>
+        <article class="contenedorGradiente imagenDestinos3">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/grecia.jpg"
+            alt="Vieja estructura griega en ruinas."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Grecia</div>
+        </article>
 
-    <!-- África -->
-    <div class="tituloPais" id="enlacePaginaAfrica">
-      <h2 class="mih2 h2Destinos">África</h2>
-    </div>
+        <article class="contenedorGradiente imagenDestinos4">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/italia.jpg"
+            alt="Infraestructura italiana, montón de casas juntas pintadas de distintos colores."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Italia</div>
+        </article>
+      </section>
 
-    <section class="seccionesDestino">
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/egipto.jpg"
-          alt="Esfinge de Giza delante de una gran pirámide egipcia."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Egipto</div>
+      <!-- ASIA -->
+      <div class="tituloPais" id="enlacePaginaAsia">
+        <h2 class="mih2">Asia</h2>
       </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/sudafrica.jpg"
-          alt="Un único árbol acacia sobre un atardecer nublado en África"
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Sudáfrica</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/kenia.jpg"
-          alt="Rinocerontes caminando sobre tierra amarillenta en Kenia."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Kenia</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/marruecos.jpg"
-          alt="Murallones y estructuras color amarillentas sobre una gran selva en África."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Marruecos</div>
-      </div>
-    </section>
 
-    <!-- América -->
-    <div class="tituloPais" id="enlacePaginaAmerica">
-      <h2 class="mih2 h2Destinos">América</h2>
-    </div>
+      <section class="seccionesDestino">
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/japon.jpg"
+            alt="Infraestructura japonesa de color roja, techo en caída con detalles en sus puntas.De fondo y a lo lejos un pueblo y una montaña nevada."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Japón</div>
+        </article>
 
-    <section class="seccionesDestino">
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/argentina.jpg"
-          alt="Cordillera de los Andes del lado Argentino.Cadena de montañas grande, color marrón y con nieve en su parte superior."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Argentina</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/brasil.jpg"
-          alt="Islas verdes sobre playa de arena blanca y mar azul claro."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Brasil</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/mexico.jpg"
-          alt="Templo azteca hecho de piedra en México."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">México</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/estadosUnidos.jpg"
-          alt="Puente de San Francisco. Gran puente rojo, extenso que cruza un gran estrecho."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Estados Unidos</div>
-      </div>
-    </section>
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/tailandia.jpg"
+            alt="Gran isla rocosa con mucho verde sobre un mar azul intenso."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Tailandia</div>
+        </article>
 
-    <!-- Oceanía -->
-    <div class="tituloPais" id="enlacePaginaOceania">
-      <h2 class="mih2 h2Destinos">Oceanía</h2>
-    </div>
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/india.jpg"
+            alt="Gran y lujoso edificio indio de colores beige."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">India</div>
+        </article>
 
-    <section class="seccionesDestino">
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/australia.jpg"
-          alt="Monte Uluru, en Australia. Gran monolito de arenisca roja."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Australia</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/nuevaZelanda.jpg"
-          alt="Persona parada sobre la punta de una montaña alta rodeada de nubes."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Nueva Zelanda</div>
-      </div>
-      <div class="contenedorGradiente">
-        <img
-          class="imagenDestinos"
-          src="assets/imagenes/destinos/melbourne.jpg"
-          alt="Fina y antigua construcción en colores beige sobre las calles de Melbourne."
-        />
-        <div class="gradiente"></div>
-        <div class="textoGradiente">Melbourne</div>
-      </div>
-    </section>
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/china.jpg"
+            alt="Atardecer con una estructura china bajo un lago oscuro."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">China</div>
+        </article>
+      </section>
 
-    <!-- Footer -->
+      <!-- ÁFRICA -->
+      <div class="tituloPais" id="enlacePaginaAfrica">
+        <h2 class="mih2">África</h2>
+      </div>
+
+      <section class="seccionesDestino">
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/egipto.jpg"
+            alt="Esfinge de Giza delante de una gran pirámide egipcia."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Egipto</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/sudafrica.jpg"
+            alt="Un único árbol acacia sobre un atardecer nublado en África"
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Sudáfrica</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/kenia.jpg"
+            alt="Rinocerontes caminando sobre tierra amarillenta en Kenia."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Kenia</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/marruecos.jpg"
+            alt="Murallones y estructuras color amarillentas sobre una gran selva en África."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Marruecos</div>
+        </article>
+      </section>
+
+      <!-- AMÉRICA -->
+      <div class="tituloPais" id="enlacePaginaAmerica">
+        <h2 class="mih2">América</h2>
+      </div>
+
+      <section class="seccionesDestino">
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/argentina.jpg"
+            alt="Cordillera de los Andes del lado Argentino.Cadena de montañas grande, color marrón y con nieve en su parte superior."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Argentina</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/brasil.jpg"
+            alt="Islas verdes sobre playa de arena blanca y mar azul claro."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Brasil</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/mexico.jpg"
+            alt="Templo azteca hecho de piedra en México."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">México</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/estadosUnidos.jpg"
+            alt="Puente de San Francisco. Gran puente rojo, extenso que cruza un gran estrecho."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Estados Unidos</div>
+        </article>
+      </section>
+
+      <!-- OCEANÍA -->
+      <div class="tituloPais" id="enlacePaginaOceania">
+        <h2 class="mih2">Oceanía</h2>
+      </div>
+
+      <section class="seccionesDestino">
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/australia.jpg"
+            alt="Monte Uluru, en Australia. Gran monolito de arenisca roja."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Australia</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/nuevaZelanda.jpg"
+            alt="Persona parada sobre la punta de una montaña alta rodeada de nubes."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Nueva Zelanda</div>
+        </article>
+
+        <article class="contenedorGradiente">
+          <img
+            class="imagenDestinos"
+            src="assets/imagenes/destinos/melbourne.jpg"
+            alt="Fina y antigua construcción en colores beige sobre las calles de Melbourne."
+          />
+          <div class="gradiente"></div>
+          <div class="textoGradiente">Melbourne</div>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
       <img
         class="logotipo"
