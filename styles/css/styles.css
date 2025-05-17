@@ -19,7 +19,7 @@ a {
   text-align: center;
   margin-bottom: 2rem;
 }
-.mih1 span p {
+.mih1 span {
   display: inline-block;
   color: #ffc107;
   font-size: 3.125rem;
@@ -36,7 +36,7 @@ a {
   text-align: center;
   margin: 20vh 0 9vh 0;
 }
-.mih2 span p {
+.mih2 span {
   display: inline-block;
   color: #ffc107;
   font-size: 2.5rem;
@@ -395,7 +395,7 @@ footer a:hover {
   text-align: center;
   margin: 5rem auto 2rem;
 }
-.mih1Blog span p {
+.mih1Blog span {
   display: inline-block;
   color: #ffc107;
   font-size: 2.5rem;
@@ -411,7 +411,7 @@ footer a:hover {
   text-align: center;
   margin: 5rem auto 2rem;
 }
-.mih2Blog span p {
+.mih2Blog span {
   display: inline-block;
   color: #ffc107;
   font-size: 2.5rem;
@@ -500,7 +500,7 @@ footer a:hover {
   text-align: center;
   margin: 3rem auto 2rem;
 }
-.titulosFotografia span p {
+.titulosFotografia span {
   display: inline-block;
   color: #ffc107;
   font-size: 3.125rem;
@@ -560,7 +560,7 @@ footer a:hover {
   text-align: center;
   margin: 15vh 0 9vh 0;
 }
-.h2SobreMi span p {
+.h2SobreMi span {
   display: inline-block;
   color: #ffc107;
   font-size: 2.5rem;
@@ -576,7 +576,7 @@ footer a:hover {
   text-align: center;
   margin: 0px 0px 30px;
 }
-.bienvenidaPatronZ .h2SobreMi span p {
+.bienvenidaPatronZ .h2SobreMi span {
   display: inline-block;
   color: #ffc107;
   font-size: 2.5rem;

@@ -45,8 +45,8 @@
 
   <body>
     <!-- NAV BAR BOOTSRAP-->
-    <header>
-      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+     <header>
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top" aria-label="Menú principal de navegación">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
@@ -123,11 +123,11 @@
       </div>
 
       <!-- SECCIÓN VIDA EN FOCO-->
-      <section id="seccionVidaEnFoco">
+      <section id="seccionVidaEnFoco" aria-label="Sección con introducción a la fotografía de viajes">
         <h1 class="titulosFotografia" id="enlaceTipsFotografia">
           La vida en
           <span>
-            <p>foco</p>
+            foco
           </span>
         </h1>
         <p class="textoBienvenida">
@@ -139,12 +139,13 @@
       </section>
 
       <!-- SECCIÓN TIPS FOTOGRÁFICOS -->
-      <section class="seccionFotografias">
+      <section class="seccionFotografias" aria-label="Sección con consejos y tips fotográficos">
         <article class="miCard">
           <img
             class="imagenPequena"
             src="assets/imagenes/fotografia/mujerArribaVan.webp"
             alt="Mujer tomando una fotografía estando parada arriba de una van"
+            loading="lazy"
           />
           <p>Viaja y captura: consejos para fotografiar en movimiento</p>
         </article>
@@ -154,6 +155,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/viajeSolo.webp"
             alt="Mujer colorada con un sombrero casual y una camisa blanca caminando sobre un campo"
+            loading="lazy"
           />
           <p>Aprende a fotografiarte solo en tus viajes</p>
         </article>
@@ -163,6 +165,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/esenciaCultura.webp"
             alt="Hombre indio de tez morena, vestido con gran turbante rojo y joyas doradas."
+            loading="lazy"
           />
           <p>¿Cómo capturar la esencia de las culturas en una foto?</p>
         </div>
@@ -172,6 +175,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/paisajesImpresionantes.webp"
             alt="Gran isla verde en forma de C sobre mar azul intenso. "
+            loading="lazy"
           />
           <p>3 consejos para fotografías impresionantes de tus viajes</p>
         </article>
@@ -181,6 +185,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/cuentaHistorias.webp"
             alt="Jóvenes africanos haciendo acrobacias en el agua."
+            loading="lazy"
           />
           <p>¿Cómo contar historias através de la fotografía?</p>
         </article>
@@ -190,6 +195,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/ciudadNoche.webp"
             alt="Callejón de una ciudad nocturna, iluminada con luces de colores de la propia calle."
+            loading="lazy"
           />
           <p>La noche en la ciudad: consejos para fotografiar la iluminación</p>
         </article>
@@ -199,6 +205,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/vestidoRojo.webp"
             alt="Mujer de cabellera rojiza, larga y ondulada, lleva puesto un vestido rojo largo y camina sobre un paisaje rocoso color beige."
+            loading="lazy"
           />
           <p>Tips para fotografiar tus aventuras en el extranjero</p>
         </article>
@@ -208,6 +215,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/camaraFotografica.webp"
             alt="Gran cámara fotográfica profesional, de color gris y negro."
+            loading="lazy"
           />
           <p>¿Qué equipo fotográfico es el mejor para un viaje?</p>
         </article>
@@ -217,6 +225,7 @@
             class="imagenPequena"
             src="assets/imagenes/fotografia/editorFotos.webp"
             alt="Laptop gris con un programa de edición fotográfica en su pantalla"
+            loading="lazy"
           />
           <p>Los mejores editores de fotos y cómo usarlos adecuadamente</p>
         </article>
@@ -227,7 +236,7 @@
         <h2 class="mih2" id="enlacePaginaGaleria">
           Mi
           <span>
-            <p>galería</p>
+          galería
           </span>
         </h2>
         <div class="miContainerCarousel">
@@ -238,6 +247,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/fotografia/doceApostolesAustralia.webp"
                   alt="Agrupamiento de agujas de piedra caliza que sobresalen del mar en la costa del Parque nacional Porta Campbell, en Victoria, Australia."
+                  loading="lazy"
                 />
               </div>
               <div class="carousel-item">
@@ -245,6 +255,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/fotografia/elefanteMasaiMara.webp"
                   alt="Elefante adulto caminando por la reserva Nacional Masai Mara, en África."
+                  loading="lazy"
                 />
               </div>
               <div class="carousel-item">
@@ -252,6 +263,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/fotografia/peritoMoreno.webp"
                   alt="Enorme glaciar ubicado en la Patagonia, con un frente de hielo que desboca en el brazo Sur del lago Argentino"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -285,7 +297,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+      <footer aria-label="Pie de página con enlaces y derechos de autor">
       <img
         class="logotipo"
         src="assets/imagenes/logotipos/logoMundoLetra.png"

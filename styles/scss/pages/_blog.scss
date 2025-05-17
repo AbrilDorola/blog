@@ -29,7 +29,7 @@
     @include titulos ($font-size-h1, $font-weight-800, $color-gris-titulos, center);
     margin: 5rem auto 2rem;
 
-    span p {
+    span  {
         @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria,0)
     }
 }
@@ -38,7 +38,7 @@
     @include titulos($font-size-h2, $font-weight-700, $color-gris-titulos, center);
     margin: 5rem auto 2rem;
 
-    span p {
+    span  {
         @include spanTitulos($display-inline-block, $color-amarillo-primario, 2.5rem, $font-weight-100, $font-family-secundaria, null,)
     }
 }

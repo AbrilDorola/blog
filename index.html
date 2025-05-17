@@ -45,8 +45,8 @@
 
   <body>
     <!-- NAV BAR BOOTSTRAP-->
-    <header>
-      <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+     <header>
+      <nav class="navbar navbar-expand-lg custom-navbar fixed-top" aria-label="Menú principal de navegación">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
@@ -133,7 +133,7 @@
             <h1 id="enlacePaginaIndex" class="mih1">
               La
               <span>
-                <p>aventura</p>
+                aventura
               </span>
               en <br />
               Instantes de Viaje
@@ -151,9 +151,12 @@
       </div>
 
       <!-- SECCION FAVORITOS DEL MUNDO INICIO -->
-      <section class="sectionGradienteIndex">
+      <section
+        class="sectionGradienteIndex"
+        aria-label="Sección de destinos favoritos del mundo"
+      >
         <h2 id="enlaceFavoritosMundo" class="mih2">
-          Nuestros<span> <p>favoritos</p> </span>del mundo
+          Nuestros<span> favoritos </span>del mundo
         </h2>
 
         <div class="cajaDeCards">
@@ -161,7 +164,8 @@
             <img
               class="imagenPequena"
               src="assets/imagenes/home/keniaPuma.webp"
-              alt="puma trepando un árbol en Kenia, África."
+              alt="Puma trepando un árbol en Kenia, África."
+              loading="lazy"
             />
             <div class="gradiente"></div>
             <div class="textoGradiente">Kenia</div>
@@ -172,6 +176,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/greciaTemplo.webp"
               alt="Templo antiguo de Grecia"
+              loading="lazy"
             />
             <div class="gradiente"></div>
             <div class="textoGradiente">Grecia</div>
@@ -182,6 +187,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/tailandiaMonje.webp"
               alt="Monje tailandés parado frente a un templo grande, de color blanco y dorado."
+              loading="lazy"
             />
             <div class="gradiente"></div>
             <div class="textoGradiente">Tailandia</div>
@@ -193,7 +199,7 @@
       <section>
         <h2 id="enlaceDetrasLente" class="mih2">
           La
-          <span> <p>aventura</p> </span>através del lente
+          <span> aventura </span>através del lente
         </h2>
         <div class="miContainerCarousel">
           <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -203,6 +209,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/home/reglaDeTercios.webp"
                   alt="Edificio con forma de caracol visto desde abajo."
+                  loading="lazy"
                 />
               </div>
               <div class="carousel-item">
@@ -210,6 +217,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/home/kayakRojo.webp"
                   alt="Kayak rojos posados frente a un gran lago."
+                  loading="lazy"
                 />
               </div>
               <div class="carousel-item">
@@ -217,6 +225,7 @@
                   class="imagenGrande d-block w-100"
                   src="assets/imagenes/home/montanas.webp"
                   alt="Conjunto de montañas nevadas frente a un lago."
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -248,13 +257,14 @@
         </div>
       </section>
 
-      <section class="miCardIndex">
+      <section class="miCardIndex" aria-label="Consejos fotográficos de viaje">
         <div class="cajaDeCards">
           <article class="miCard">
             <img
               class="imagenPequena"
               src="assets/imagenes/home/paisajesImpresionantes.webp"
               alt="Montañas verdes en forma de C, frente a un mar azul oscuro."
+              loading="lazy"
             />
             <p>Consejos para capturar paisajes impresionantes</p>
           </article>
@@ -264,6 +274,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/camaraFotografica.webp"
               alt="imágen de una cámara fotopgráfica profesional, grande y de color negra sobre fondo blanco"
+              loading="lazy"
             />
             <p class="miP">
               Descubre cómo la fotografía puede enriquecer tu viaje
@@ -275,6 +286,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/vestidoRojo.webp"
               alt="Mujer con vestido rojo caminando por un paisaje montañoso de color amarillo claro"
+              loading="lazy"
             />
             <p class="miP">
               Tips para fotografiar tus aventuras en el extranjero
@@ -287,7 +299,7 @@
       <section class="miCardIndex">
         <h2 class="mih2">
           El Blog: nuestros
-          <span> <p>tips</p> </span>viajeros
+          <span> tips </span>viajeros
         </h2>
 
         <div class="cajaDeCards">
@@ -296,6 +308,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/croissantFrances.webp"
               alt="Croissant francés de dos pisos, relleno blanco y marrón, espolvoreado con azúcar impalpable."
+              loading="lazy"
             />
             <p>La magia de la cocina francesa: mis favoritos de París</p>
           </article>
@@ -305,6 +318,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/viajeSolaJapon.webp"
               alt="Mujer jóven, de cabello colorado paseando por las calles de Japón."
+              loading="lazy"
             />
             <p>
               Viajando sola a Tokio: consejos para navegar la ciudad de for...
@@ -316,6 +330,7 @@
               class="imagenPequena"
               src="assets/imagenes/home/matePatagonia.webp"
               alt="Mate posado en la ruta frente a un paisaje de montañas nevadas en la Patagonia Argentina-"
+              loading="lazy"
             />
             <p>El mate, la infusión típica Argentina ¿Qué debes saber?</p>
           </article>
@@ -324,7 +339,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+     <footer aria-label="Pie de página con enlaces y derechos de autor">
       <img
         class="logotipo"
         src="assets/imagenes/logotipos/logoMundoLetra.png"
@@ -354,6 +369,7 @@
           <a href="destinos.html#enlacePaginaOceania">Oceanía</a>
         </div>
       </div>
+
       <p id="derechosdeautor">Abril Dorola.Todos los derechos reservados.</p>
     </footer>
 
